@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-05-27T10:01:00Z",
+    "level": "INFO",
+    "service": "api-service",
+    "message": "Flask app started on port 5000"
+  },
+  {
+    "timestamp": "2025-05-27T10:02:10Z",
+    "level": "ERROR",
+    "service": "api-service",
+    "message": "Traceback (most recent call last):\n  File \"/app/services/user_service.py\", line 42, in get_user\n    user_id = request.args['user_id']\n  File \"/app/controllers/user_controller.py\", line 19, in handle\n    result = user_service.get_user()\nKeyError: 'user_id'"
+  },
+  {
+    "timestamp": "2025-05-27T10:03:30Z",
+    "level": "ERROR",
+    "service": "api-service",
+    "message": "Traceback (most recent call last):\n  File \"/app/services/payment_service.py\", line 78, in process_payment\n    total = cart['total'] * tax_rate\nTypeError: unsupported operand type(s) for *: 'str' and 'float'"
+  },
+  {
+    "timestamp": "2025-05-27T10:04:00Z",
+    "level": "INFO",
+    "service": "api-service",
+    "message": "Cache warmed up successfully"
+  }
+]

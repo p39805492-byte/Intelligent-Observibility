@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2025-05-27T10:01:00Z",
+    "level": "INFO",
+    "service": "node-service",
+    "message": "Server listening on port 3000"
+  },
+  {
+    "timestamp": "2025-05-27T10:02:20Z",
+    "level": "ERROR",
+    "service": "node-service",
+    "message": "TypeError: Cannot read properties of undefined (reading 'email')\n    at validateUser (/app/src/middleware/auth.js:34:22)\n    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)\n    at /app/src/routes/userRoutes.js:18:10"
+  },
+  {
+    "timestamp": "2025-05-27T10:03:45Z",
+    "level": "ERROR",
+    "service": "node-service",
+    "message": "UnhandledPromiseRejectionWarning: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017\n    at /app/src/db/connection.js:45:12\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+  }
+]
