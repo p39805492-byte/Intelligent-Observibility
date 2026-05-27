@@ -39,12 +39,12 @@ CLOUDWATCH_LOG_GROUP = "/ecs/ups-service"
 LOG_FILTER_KEYWORDS = ["ERROR", "EXCEPTION", "FATAL", "WARN"]
 
 # ------ GitHub / Source Code --------------------------------
-GITHUB_ENABLED = False           # Set True when you share repo details
+GITHUB_ENABLED = True           # Set True when you share repo details
 GITHUB_BASE_URL = "https://raw.githubusercontent.com"
-GITHUB_REPO = ""                 # e.g. "your-org/your-repo"
+GITHUB_REPO = "p39805492-byte/Intelligent-Observibility"                 # e.g. "your-org/your-repo"
 GITHUB_BRANCH = "main"
-GITHUB_TOKEN = ""                # Personal access token if private repo
-CONTEXT_LINES = 10               # Lines of code around the error to fetch
+GITHUB_TOKEN = "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"                # Personal access token if private repo
+CONTEXT_LINES = 10     
 
 # ------ Alert / SNS -----------------------------------------
 SNS_ENABLED = False              # Set True when on AWS
